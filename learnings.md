@@ -23,3 +23,13 @@ taints{
     value = abc
 }
 ```
+
+
+Choosing a list based on env
+
+```hcl
+azs = {
+    dev = ["us-east-1a","us-east-1b"],
+    prod = ["us-east-1a", "us-east-1b"],
+}[var.env]
+```
